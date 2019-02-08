@@ -1,4 +1,6 @@
-<img src="https://raw.githubusercontent.com/bitpay/copay/master/resources/copay/android/icon/drawable-xxxhdpi-icon.png" alt="Copay" width="79">
+<img src="https://raw.githubusercontent.com/bitpay/copay/master/resources/copay/windows/icon/Wide310x150Logo.scale-100.png" alt="Copay">
+
+copay-lite를 분석하면서 사용하는 소스입니다. 2년전 소스라 많이 다를것으로 예상되어 걱정이 앞섭니다. 모태가되는 https://github.com/bitpay/copay 는 지금까지 꾸준히 소스 수정이 있군요. 
 
 [![Build Status](https://secure.travis-ci.org/bitpay/copay.svg)](http://travis-ci.org/bitpay/copay)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/copay/localized.png)](https://crowdin.com/project/copay)
@@ -46,6 +48,27 @@ Ensure you have [Node](https://nodejs.org/) installed, then install and start Co
 npm install
 npm start
 ```
+
+역시 old 버전이라 npm install 부터 막히는 군요. 
+
+```javascript
+    "grunt-sass": "^1.2.0",
+```
+를
+```javascript
+    "grunt-contrib-sass": "latest",
+```
+로 변경 
+
+헛 또 애러.
+```
+bower trezor-connect#~1.1.3        ENORESTARGET No tag found that was able to satisfy ~1.1.3
+
+Additional error details:
+No versions found in https://github.com/trezor/connect.git
+```
+일단 오늘은 여기까지 ... 그냥 https://github.com/bitpay/copay 로 갈까?? 쩝.
+
 
 Visit [`localhost:3000`](http://localhost:3000/) to view the app.
 
